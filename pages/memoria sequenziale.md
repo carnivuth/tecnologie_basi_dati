@@ -1,0 +1,1 @@
+- memoria che può essere elaborata solo in sequenza
