@@ -1,4 +1,6 @@
+- [[perche non usare i servizi del filesistem?]]
 - il disco è diviso in ((64047a90-f81f-418a-8d2a-d10974ed09f2))
 - un singolo tablespace è diviso in ((64047a90-da0e-4420-9792-08e59fee6570))
 - un container è fatto di EXTENT
+-
 	-
