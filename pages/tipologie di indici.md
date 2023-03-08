@@ -6,7 +6,6 @@
 - INDICE CLUSTERED
 	- costruito sullo stesso attributo su cui è ordinato il file
 	- è possibile un solo indice clustered per file
--
 - INDICE PRIMARIO
 	- se costruito su un attributo unique
 - INDICE SECONDARIO
