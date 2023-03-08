@@ -1,6 +1,7 @@
 - sono strutture dati ausiliarie
 - dato un predicato di ricerca fornisce i RID dei record che la soddisfano
-- sono una collezione di coppie <RID, attributo di ricerca>
+- struttura
+	- coppie <RID, attributo di ricerca>
 - vengono sfruttati per velocizzare le ricerche
 - è possibile utilizzare il PID invece che il RID
 	- dimensione dell'indice inferiore
