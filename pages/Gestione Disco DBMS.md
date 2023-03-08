@@ -1,0 +1,2 @@
+- il disco è diviso in ((64047a90-f81f-418a-8d2a-d10974ed09f2))
+-
