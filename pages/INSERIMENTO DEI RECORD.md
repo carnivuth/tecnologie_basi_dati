@@ -1,0 +1,2 @@
+- in memoria centrale viene aggiunto il record nel primo spazio libero
+- se lo spazio non è sufficiente e è presente spazio vuoto allora i record all'interno della directory viene riorganizzato (grazie al RID è possibile spostarlo senza problemi)

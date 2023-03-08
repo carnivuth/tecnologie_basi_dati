@@ -1,0 +1,4 @@
+- RECORD OVERFLOW
+	- cosa succede quando la modifica di un record eccede la dimensione della pagina?
+	- si inserisce al posto del record la sua vera posizione e si sposta il record in un altra pagina
+	- peggioramento delle performance

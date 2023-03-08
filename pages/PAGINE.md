@@ -9,12 +9,6 @@
 		- in questo modo è possibile organizzare i record all'interno delle pagine senza modificare il RID
 		- le query di ricerca tramite RID sono facilitate
 		- gli indici contengono elenchi di RID
-		- INSERIMENTO DEI RECORD
+		- [[INSERIMENTO DEI RECORD]]
 		  id:: 63ff3f12-8bb9-4cc4-8629-7143a862e628
-			- in memoria centrale viene aggiunto il record nel primo spazio libero
-			- se lo spazio non è sufficiente e è presente spazio vuoto allora i record all'interno della directory viene riorganizzato (grazie al RID è possibile spostarlo senza problemi)
-		- MODIFICA DEI RECORD
-			- RECORD OVERFLOW
-				- cosa succede quando la modifica di un record eccede la dimensione della pagina?
-				- si inserisce al posto del record la sua vera posizione e si sposta il record in un altra pagina
-				- peggioramento delle performance
+		- [[MODIFICA DEI RECORD]]
