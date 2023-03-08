@@ -1,0 +1,5 @@
+- (il database administrator gestisce la memoria)
+- CREATE TABLESPACE ... MANAGED BY DATABASE
+- possibile creare o rimuovere containers
+	- il bilanciamento in caso di creazione o rimozione è autiomatico (il dbms distribuisce i dati del tablespace in maniera equa in tutti i container)
+- DIMENSIONE MASSIMA 512 gb
