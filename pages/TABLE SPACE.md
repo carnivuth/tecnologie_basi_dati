@@ -30,7 +30,6 @@
 			- controllo elevato
 		- [[SMS]]
 			- controllo delegato al OS
-- [[perche non usare i servizi del filesistem?]]
 - STRUTTURA DI UN CONTAINER
 	- presente un header
 	- le tuple sono organizzate in righe di file
