@@ -4,6 +4,7 @@
 - indici ordinati
 	- strutturati ad albero binario bilanciato
 	- ottimi per ricerche range
+	- necessario gestire l'albero
 - INDICE CLUSTERED
 	- costruito sullo stesso attributo su cui è ordinato il file
 	- è possibile un solo indice clustered per file
