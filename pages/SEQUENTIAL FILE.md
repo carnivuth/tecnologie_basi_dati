@@ -9,6 +9,7 @@
 		- costo di ricerca per chiave +1
 	- ((f24aed1c-ffca-40d0-9921-2370d5a1642d))
 		- costo ricerca per chiave +1
+		  id:: 64047a90-f065-4631-984b-ef2020793700
 	- ((f4e40e86-1149-4a56-9d40-db088c43e031))
 		- costo ricerca per chiave +1
 - le ricerche sono veloci ma solo se fatte per l'attributo di ordinamento
