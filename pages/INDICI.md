@@ -11,4 +11,4 @@
 - sono creati automaticamente dal DBMS in caso di campi unique
 - possibile definirli tramite SQL
 - DB2 ne definisce alcuni di default
-- necessita di gestire la rappresenta
+- necessita di gestire la rappresentazione degli indici in memoria secondaria
