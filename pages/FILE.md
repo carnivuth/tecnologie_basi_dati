@@ -13,4 +13,4 @@
 			- aggiornamento di un attributo in un record
 			  id:: f4e40e86-1149-4a56-9d40-db088c43e031
 - esistono 2 [[TIPOLOGIE DI FILE]]
-- in entrambi i casi è necessario velocizzare la ricerca dei dati all'interno dei file,si utilizzan
+- in entrambi i casi è necessario velocizzare la ricerca dei dati all'interno dei file,si utilizzano gli [[INDICI]]
