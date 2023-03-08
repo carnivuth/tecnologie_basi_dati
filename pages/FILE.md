@@ -12,4 +12,5 @@
 			  id:: f24aed1c-ffca-40d0-9921-2370d5a1642d
 			- aggiornamento di un attributo in un record
 			  id:: f4e40e86-1149-4a56-9d40-db088c43e031
-- [[TIPOLOGIE DI FILE]]
+- esistono 2 [[TIPOLOGIE DI FILE]]
+- in entrambi i casi è necessario velocizzare la ricerca dei dati all'interno dei file,si utilizzan
