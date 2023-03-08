@@ -1,0 +1,15 @@
+- i record sono salvati in base a un attributo specificato
+- gli inserimenti devono essere ordinati
+- COSTI
+	- ((30b627f4-65be-4a0f-896b-03e36d69e9e1))
+		- log2(NP) in media
+	- ((7b6cdc6d-baf3-4a1a-83f7-7720b9276cf4))
+		- costo ricerca -1 + ((H-L)*NP)/(HK-HL)
+	- ((63ff3f12-8bb9-4cc4-8629-7143a862e628))
+		- costo di ricerca per chiave +1
+	- ((f24aed1c-ffca-40d0-9921-2370d5a1642d))
+		- costo ricerca per chiave +1
+	- ((f4e40e86-1149-4a56-9d40-db088c43e031))
+		- costo ricerca per chiave +1
+- le ricerche sono veloci ma solo se fatte per l'attributo di ordinamento
+- necessario riordinare periodicamente
