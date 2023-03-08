@@ -13,3 +13,4 @@
 		  id:: 63ff3f12-8bb9-4cc4-8629-7143a862e628
 		- [[MODIFICA DEI RECORD]]
 	- [[RAPPRESENTAZIONE DEI DATI]]
+- le pagine sono organizzate in [[FILE]]

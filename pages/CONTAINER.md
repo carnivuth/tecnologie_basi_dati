@@ -4,4 +4,4 @@
 - il container è diviso in [[EXTENTS]]
 - le tuple sono organizzate in righe di file
 - gli attributi sono in ordine sequenzialmente
-- insiemi di tuple vengono organizzati in pagine
+- insiemi di tuple vengono organizzati in [[PAGINE]]
