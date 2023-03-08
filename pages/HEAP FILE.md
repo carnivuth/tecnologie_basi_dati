@@ -1,0 +1,1 @@
+- i dati vengono inseriti senza particolare ordine
