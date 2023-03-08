@@ -2,7 +2,6 @@
 - può essere un file sul filesystem del OS oppure un device come un disco intero
 - il DBMS bilancia automaticamente i dati all'interno dei container
 - il container è diviso in [[EXTENTS]]
-- presente un header
 - le tuple sono organizzate in righe di file
 - gli attributi sono in ordine sequenzialmente
 - insiemi di tuple vengono organizzati in pagine
