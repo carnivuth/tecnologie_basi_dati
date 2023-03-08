@@ -1,0 +1,26 @@
+- un container è l'elemento costituente dei [[TABLE SPACE]]
+- può essere un file sul filesystem del OS oppure un device come un disco intero
+- il DBMS bilancia automaticamente i dati all'interno dei container
+- il container è diviso in [[EXTENTS]]
+- presente un header
+- le tuple sono organizzate in righe di file
+- gli attributi sono in ordine sequenzialmente
+- insiemi di tuple vengono organizzati in pagine
+- RAPPRESENTAZIONE DEI DATI
+	- char
+		- si usa un numero di byte pari a quanto richiesto dalla tabella
+	- varchar
+		- numero di caratteri seguiti dalla codifica
+	- DATE TIME
+		- memorizzati come interi, mostrati all'esterno come stringhe
+	- vengono memorizzati anche gli offset degli attributi dei record per facilitare le query
+	- vengono memorizzati:
+		- lunghezza del record
+		- indirizzi di inizio dei campi variabili
+		- campi a lunghezza fissa
+		- campi a lunghezza variabile
+		- questi campi aumentano la dimensione del record ma consentono di velocizzare le query
+	- viene memorizzato anche un header del record
+		- ID della relazione a cui il record appartiene
+		- ID del record all'interno del DB
+	- normalmente un record è contenuto nella dimensione massima della pagina
