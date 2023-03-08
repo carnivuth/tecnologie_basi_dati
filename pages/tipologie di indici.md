@@ -1,4 +1,5 @@
 - indici hash
+	- sono indici in cui viene memorizzato l'hash del valore dell'attributo indicizzato
 	- non ottimali per ricerca con range
 - indici ordinati
 	- strutturati ad albero binario bilanciato
