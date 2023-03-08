@@ -1,0 +1,32 @@
+- operazione che consiste nello spostare pagine da memoria secondaria a memoria centrale
+- buffer
+	- aree di memoria centrale chiamate
+	- BUFFER SU MEMORIA = PAGINA SU DISCO
+- gestione del buffer delegata al **BUFFER MANAGER**
+- BUFFER MANAGER
+	- la strategia applicata dal buffer manager è fondamentale per
+		- le performance
+		- persistenza dei dati nelle transazioni
+	- quando viene richiesta una pagina
+		- se è presente in memoria centrale il BM restituisce l'indirizzo
+		- se la pagina non è presente in memoria centrale
+			- viene selezionato un buffer per il caricamento della pagina
+			- se il buffer selezionato è occupato da un altra pagina, viene salvato solo se modificato e utilizzato per il caricamento della nuova pagina
+				- la pagina selezionata è quella che è stata utlizzata l'ultima volta da meno tempo (MRU)( seguendo i ((63f75851-5c6f-4200-b880-089c170b6e2e)) al contrario)
+					- questo per ottimizzare le letture e i JOIN
+				- è possibile variare la politica di gestione del buffer pool per in fase di creazione del table space
+					- più flessibilità rispetto alla gestione della memoria del OS
+					-
+	- interfaccia del BUFFER MANAGER
+		- getAndPinPage()
+			- viene richiesta una pagina al buffer manager
+			- viene anche contrassegnata come occupata tramite un intero che indica quanti utilizzatori stanno utilizzando la pagina
+		- unPinPage()
+			- la pagina viene contrassegnata come non in utilizzo
+		- setDirty()
+			- la pagina viene contrassegnata come modificata
+			- il contenuto della pagina non corrisponde con cosa c'è nel disco
+		- flushPage()
+			- viene forzato il salvataggio della pagina in memoria centrale
+			- non consentito a tutti gli utilizzatori
+			- il buffer non viene liberato
