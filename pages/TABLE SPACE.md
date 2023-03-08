@@ -18,7 +18,7 @@
 			- no separazione
 		- [[DMS]]
 			- gli oggetti (indici e tabelle) possono essere contenuti in tablespace differenti
-		- AS
+		- [[Automatic Storage]]
 			- gli oggetti (indici e tabelle) possono essere contenuti in tablespace differenti
 	- TRE SISTEMI A CONFRONTO
 		- [[Automatic Storage]]
@@ -30,27 +30,8 @@
 			- controllo elevato
 		- [[SMS]]
 			- controllo delegato al OS
-- [[CONTAINER]]
-- ORGANIZZAZIONE DELLA PAGINA
-	- header
-	- directory
-		- contiene un puntatore per ogni record di cui fa parte
-		- id di un record (RID) composto da
-			- PID (page identifier)
-			- Slot (location all'interno della directory)
-		- le directory non sono ordinate
-		- in questo modo è possibile organizzare i record all'interno delle pagine senza modificare il RID
-		- le query di ricerca tramite RID sono facilitate
-		- gli indici contengono elenchi di RID
-		- INSERIMENTO DEI RECORD
-		  id:: 63ff3f12-8bb9-4cc4-8629-7143a862e628
-			- in memoria centrale viene aggiunto il record nel primo spazio libero
-			- se lo spazio non è sufficiente e è presente spazio vuoto allora i record all'interno della directory viene riorganizzato (grazie al RID è possibile spostarlo senza problemi)
-		- MODIFICA DEI RECORD
-			- RECORD OVERFLOW
-				- cosa succede quando la modifica di un record eccede la dimensione della pagina?
-				- si inserisce al posto del record la sua vera posizione e si sposta il record in un altra pagina
-				- peggioramento delle performance
+- il tablespace è diviso in [[CONTAINER]]
+- [[PAGINA]]
 - LETTURA E SCRITTURA PAGINE
 	- operazione che consiste nello spostare pagine da memoria secondaria a memoria centrale
 	- buffer
