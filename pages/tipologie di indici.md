@@ -18,6 +18,7 @@
 	- numero di puntatori pari a numero di record
 	- tutti gli elementi sono indicizzati
 - INDICE SPARSO
+  id:: 64047a90-bd7d-4d86-b877-c4ef22149d50
 	- non tutti  i record sono indicizzati
 	- possibile solo per indici clustered(di solito indice per pagina)
 - INDICE MULTILIVELLO
