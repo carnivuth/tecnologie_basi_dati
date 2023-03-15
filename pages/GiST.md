@@ -11,6 +11,12 @@
 				- questo consente di fare pruning dell'albero, rimuovendo le parti dell'albero che non soddisfano il predicato
 				- approccio conservativo nella semantica
 					- si afferma che è consistente anche se non si  è in grado di definirlo
+			- UNION (P)
+				- crea un predicato che fa match con la serie di sottoalberi data in input
+			- COMPRESS (E)
+				- data una entry restituisce una entry con chiave compressa
+			- DECOMPRESS (E')
+				- restituisce la entry con chiave decompressa
 		- Tree methods
 			- metodi di gestione dell'albero
 		-
