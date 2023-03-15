@@ -45,6 +45,8 @@
 			- ##### CHOOSESUBTREE
 			  id:: 6411a780-3d89-44a8-89d1-5f4943ce4c33
 				- chiama ((6411a50e-d55a-42f6-9b6c-bb04409ec1b9))
+				- sceglie il sottoalbero  piu adatto per inserire una entry
+				- se necessario viene chiamato ((6411a50e-d55a-42f6-9b6c-bb04409ec1b9)) per determinare il sottoalbero migliore e avviene una chiamata ricorsiva
 			- ##### SPLIT
 			  id:: 6411a785-4067-483c-be2a-827e6c36e191
 				- chiama ((6411a5cf-2bce-4ccf-8495-baceba115bc4)) ((6411a3cd-6261-45f2-9e1b-2dcc2b47d0f0))
