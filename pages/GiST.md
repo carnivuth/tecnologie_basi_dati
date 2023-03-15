@@ -6,17 +6,22 @@
 	- l'albero di GiST prevede due tipologie di metodi
 		- Key methods
 			- specificati dall'implementazione dell'albero
-			- CONSISTENT(entry,predicate)
+			- #### CONSISTENT(entry,predicate)
 				- determina se un sottoalbero è consistente con il predicato
 				- questo consente di fare pruning dell'albero, rimuovendo le parti dell'albero che non soddisfano il predicato
 				- approccio conservativo nella semantica
 					- si afferma che è consistente anche se non si  è in grado di definirlo
-			- UNION (P)
+			- #### UNION (P)
 				- crea un predicato che fa match con la serie di sottoalberi data in input
-			- COMPRESS (E)
+			- #### COMPRESS (E)
 				- data una entry restituisce una entry con chiave compressa
-			- DECOMPRESS (E')
+			- #### DECOMPRESS (E')
 				- restituisce la entry con chiave decompressa
+			- #### PENALTY()
+				- TODO inserire definizione
+			- #### PICSPLIT(P)
+				- dato l'insieme di entry di M +1 vengono restituiti due set di entry con cardinalità > fM
+			-
 		- Tree methods
 			- metodi di gestione dell'albero
 		-
