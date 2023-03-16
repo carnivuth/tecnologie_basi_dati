@@ -1,13 +1,16 @@
-h4 {
+h3 {
   color:red ;
+}
+h4 {
+  color: green ;
 }
 
 h5 {
-  color:#96d5ec ;
+  color:purple ;
 }
 i{
   color: grey;
 }
 b{
-  color: green;
+  color: white;
 }
