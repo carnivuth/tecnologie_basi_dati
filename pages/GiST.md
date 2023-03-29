@@ -1,7 +1,7 @@
 - struttura generalizzata per l'implementazione di indici
 - opportunamente istanziata puo comportarsi da diverse tipologie di albero
 - concetti base
-	- una query è vista come un predicato
+	- una query è vista come un **predicato**
 	- si accede a un determinato sottoalbero solo se è consistente con il predicato (vi è la possibilità che il sottoalbero contenga record che soddisfano il predicato)
 	- l'albero di GiST prevede due tipologie di metodi
 		- Key methods
