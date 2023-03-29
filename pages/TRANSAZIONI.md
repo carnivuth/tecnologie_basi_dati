@@ -6,6 +6,7 @@
 - #### CONCISTENCY
   id:: 64130fb2-5a41-4907-ac7e-523ad2167e28
 	- il db alla fine della transazione deve trovarsi in uno stato consistente (i vincoli definiti sul db non devono essere violati)
+	  id:: 6421c858-a90b-41be-8480-762bfb117ecc
 - #### ISOLATION
   id:: 6421c858-c6de-4b98-a122-c18655fbdcf2
 	- l'esecuzione di una transazione non deve interferire con l'esecuzione di un altra
@@ -21,4 +22,4 @@
 	- #### CONCURRENCY MANAGER
 		- responsabile di ((6421c858-c6de-4b98-a122-c18655fbdcf2))
 	- #### DDL COMPILER
-		- responsabile della ((6421c858-9048-4a02-bc33-e399ec6df6da))
+		- responsabile della ((64130fb2-5a41-4907-ac7e-523ad2167e28))
