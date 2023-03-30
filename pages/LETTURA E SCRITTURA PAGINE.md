@@ -4,6 +4,7 @@
 	- BUFFER SU MEMORIA = PAGINA SU DISCO
 - gestione del buffer delegata al **BUFFER MANAGER**
 - BUFFER MANAGER
+  id:: 6421c859-e576-4cb6-ab0f-7036468a8c2e
 	- la strategia applicata dal buffer manager è fondamentale per
 		- le performance
 		- persistenza dei dati nelle transazioni
@@ -18,6 +19,7 @@
 					- più flessibilità rispetto alla gestione della memoria del OS
 					-
 	- interfaccia del BUFFER MANAGER
+	  id:: 6421c859-35a0-406f-b9ea-3d781c949e67
 		- getAndPinPage()
 			- viene richiesta una pagina al buffer manager
 			- viene anche contrassegnata come occupata tramite un intero che indica quanti utilizzatori stanno utilizzando la pagina
