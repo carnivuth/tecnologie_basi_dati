@@ -1,0 +1,34 @@
+- necessario per risolvere query di order by
+- utile per risolvere join e group by
+- ##### ALGORITMI DI SORT INTERNI (*MEMORIA RAM*)
+  id:: 64368e5d-dd90-4a67-845e-96e561a1c188
+	- ![image.png](../assets/image_1681296937843_0.png)
+- ##### SORT-MERGE ESTERNO
+	- suddividere i dati in sequenze ridotte **RUN**
+	- ordinare le sequenze una a una con un ((64368e5d-dd90-4a67-845e-96e561a1c188))
+	- fondere le sequenze una a una un elemento per volta (*merge*)
+	- ![image.png](../assets/image_1681297309974_0.png)
+	- ###### COSTO
+		- ![image.png](../assets/image_1681297521104_0.png)
+	- costi troppo elevati necessario ridurre i costi
+- ##### SORT MERGE A Z VIE
+	- i buffer di ordinamento vengono sfruttati tutti anche nella fase di merge
+	- il confronto viene eseguito fra z elementi
+	- ![image.png](../assets/image_1681297867175_0.png){:height 258, :width 588}
+	- ###### COSTI
+		- ![image.png](../assets/image_1681298131519_0.png)
+		- il sistema tuttavia risulta esoso in termini di cpu (*alto numero di confronti*)
+		- possibile ridurre il costo tramite una **coda**
+		- ![image.png](../assets/image_1681298232374_0.png)
+	- ###### TIPI DI LETTURE
+		- per ottimizzare necessario distinguere tra operazioni random e sequenziali
+		- si prevengono letture inefficienti
+		- ![image.png](../assets/image_1681298621629_0.png)
+		- costo di sort interno
+		- ![image.png](../assets/image_1681298814977_0.png)
+		- ![image.png](../assets/image_1681299031385_0.png)
+		-
+		-
+	-
+	-
+	-

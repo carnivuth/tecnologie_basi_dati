@@ -6,6 +6,7 @@
 	- ottimi per ricerche range
 	- necessario gestire l'albero
 - ### INDICE CLUSTERED
+  id:: 6421c859-1c54-4305-9f8e-1fbd53a0d872
 	- costruito sullo stesso attributo su cui è ordinato il file
 	- è possibile un solo indice clustered per file
 - ### INDICE PRIMARIO

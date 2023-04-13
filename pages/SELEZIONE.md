@@ -1,0 +1,39 @@
+- data la seguente query
+- ![image.png](../assets/image_1681382045513_0.png)
+- qual'è il miglior metodo risolutivo?
+- diversi fattori in gioco tra cui
+	- **numero dei record nel risultato**
+	- **presenza degli indici**
+	- **tipologia degli indici**
+- ## STIMA DEL NUMERO DI RISULTATI
+	- stima secondo la formula E = f*N
+		- N numero di **record in imput**
+		- f è il **fattore di selettività** del predicato usato nella selezione
+	- come si stima il **fattore di selettivita** ?
+		- se si assume che l'attributo coinvolto nella selezione sia uniformemente distribuito allora **f=EK/NK**
+		- con **EK = numero di valori attesi nel risultato**
+		- sistema molto fragile da usare solo in assenza di altro
+- ### COSTO
+	- in assenza di indice necessario leggere tutto il file dati
+	- se si usa un b+tree  allora il costo è **h-1+f*L + costo file dati**
+	- se l'indice è ((6421c859-1c54-4305-9f8e-1fbd53a0d872)) costo file dati = **f*P**
+	- se l'indice è unclustered costo file dati = **EK*f(N/NK,P)**
+	- se si ha un indice hash il costo è **1 + costo file dati**
+- ## VARIANTE CON INDICE UNCLUSTERED
+	- in caso di predicati che contengono molti record su piu chiavi puo convenire **ordinare i RID prima di accedere al file dati**
+		- Scandisci l'indice e reperisci tutte le coppie (k,RID) che soddisfano il predicato
+		- Ordina le coppie per valore di RID crescente
+		- Scandisci il file dati ordinatamente, usando i RID
+	- ![image.png](../assets/image_1681383192151_0.png)
+	- ![image.png](../assets/image_1681383289102_0.png)
+- ## SELEZIONE CON CONDIZIONE COMPLESSA
+	- se la clausola where fa riferimento a piu attributi si procede come segue
+		- si riscrive la condizione in **forma normale congiuntiva** (*A and B and (C or D)*)
+			- in questo modo si può scartare subito parte dei record che non soddisfano il predicato
+		- quindi si valuta se **esiste un indice in grado di risolvere la condizione riscritta in CNF**
+		- ### INDICI HASH
+			- si possono usare se **la query presenta gli stessi attributi dell'indice oppure attributi aggiuntivi**
+			- in caso di attributi aggiuntivi si risolve con un passaggio ulteriore in RAM
+		- ### INDICI B+TREE
+			- si possono usare anche **se la query presenta un numero di attributi inferiori**
+			-
