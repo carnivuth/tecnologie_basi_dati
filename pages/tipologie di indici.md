@@ -1,27 +1,26 @@
-- indici hash
+- ### indici hash
 	- sono indici in cui viene memorizzato l'hash del valore dell'attributo indicizzato
 	- non ottimali per ricerca con range
-- indici ordinati
+- ### indici ordinati
 	- strutturati ad albero binario bilanciato
 	- ottimi per ricerche range
 	- necessario gestire l'albero
-- INDICE CLUSTERED
+- ### INDICE CLUSTERED
 	- costruito sullo stesso attributo su cui è ordinato il file
 	- è possibile un solo indice clustered per file
-- INDICE PRIMARIO
+- ### INDICE PRIMARIO
 	- se costruito su un attributo unique
-- INDICE SECONDARIO
+- ### INDICE SECONDARIO
 	- costruito su un attributo non unique
 	- strutturato a insieme di liste
-	-
-- INDICE DENSO
+- ### INDICE DENSO
 	- numero di puntatori pari a numero di record
 	- tutti gli elementi sono indicizzati
-- INDICE SPARSO
+- ### INDICE SPARSO
   id:: 64047a90-bd7d-4d86-b877-c4ef22149d50
 	- non tutti  i record sono indicizzati
 	- possibile solo per indici clustered(di solito indice per pagina)
-- INDICE MULTILIVELLO
+- ### INDICE MULTILIVELLO
 	- struttura dati fatta da indici che indici che indicizzano altri indici
 		- essendo che gli indici sono ordinati gli indici di questo tipo sono sparsi
 		- creando cosi una struttura ad albero
