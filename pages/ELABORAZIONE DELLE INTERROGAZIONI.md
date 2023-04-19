@@ -144,6 +144,24 @@
 				- #### COSTI
 					- Sorting ` costo sort + P(R) + P(S) `
 					- Hashing ` 3 P(R) + 3 P(S) `
-				-
+		- # FUNZIONI AGGREGATE
+			- supponiamo di avere una query del tipo
+			- ![image.png](../assets/image_1681903552192_0.png)
+			- l'algoritmo tiene traccia delle informazioni parziali in base all'operatore
+			- ![image.png](../assets/image_1681903602352_0.png)
+			- si può sfruttare la presenza di un **indice per ottimizzare** le query
+		- # GROUP BY
+			- supponiamo di avere una query del tipo
+			- ![image.png](../assets/image_1681903839849_0.png)
+			- necessario partizionare
+			- ### SORTING
+				- si faccia riferimento a [[PROIEZIONE]]
+			- ### HASING
+				- si faccia riferimento a [[PROIEZIONE]]
+			- ### INDICE
+				- si faccia riferimento a [[PROIEZIONE]]
+			-
+			-
+			-
 			-
 			-
