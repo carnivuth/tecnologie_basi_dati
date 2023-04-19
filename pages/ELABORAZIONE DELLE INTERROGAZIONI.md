@@ -82,14 +82,17 @@
 		- # PROIEZIONE
 			- query del tipo
 			- ![image.png](../assets/image_1681896122390_0.png)
-			- possibilita
-				- #### sorting
-					- si scandisce r e si rimuovono gli attributi non richiesti
-					- si ordina il file
-					- si rimuovono i duplicati
-					- ![image.png](../assets/image_1681896297889_0.png)
-					-
+			- #### SORTING
+				- si scandisce r e si rimuovono gli attributi non richiesti
+				- si ordina il file
+				- si rimuovono i duplicati
+				- ![image.png](../assets/image_1681896297889_0.png)
+			- #### USARE HASING
+				- si adotta quando si ha un numero di buffer molto grande
+				- si leggono le pagine e si usa una funzione hash e si ridistribuiscono i risultati su file
+				- si leggono in sequenza i file generati e si applica una nuova funzione hash (*diversa dalla prima* ) e si redistribuiscono i record nelle pagine e si eliminano i duplicati
+				- ![image.png](../assets/image_1681896774481_0.png)
 				-
-				- usare hasing
-				- usare indice
+				-
+			- #### USARE INDICE
 			-
