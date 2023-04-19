@@ -93,5 +93,26 @@
 					- è conveniente avere come relazione esterna quella con più tuple ma il guadagno sulle prestazioni non è significativo
 				- ### PROPRIETÀ
 					- l'algoritmo **preserva l'ordine della relazione esterna**
-					-
+					- può risultare utile per altre operazioni da svolgere nella query
+					- ![image.png](../assets/image_1681898140692_0.png)
+				- ### VERSIONE PAGINATA
+					- ![image.png](../assets/image_1681898218951_0.png)
+					- si perde il vantaggio dell'ordinamento ma si riduce di molto il numero di I/O
+				- ### SFRUTTANDO IL BUFFER
+					- se si avesse un maggior numero di pagine del buffer si possono sfruttare per migliorare le prestazioni
+					- si usano B-2 pagine per la relazione esterna
+					- 1 per la relazione interna
+					- 1 per la pagina di output
+					- ![image.png](../assets/image_1681898408366_0.png)
+					- ci puo eseere un caso in cui la relazione interna a il maggior numero di buffer ovvero quando si **puo contentere interamente in memoria**
+				- ### HASING PER EFFETTUARE MATCHING
+					- si può usare una funzione hash su i record della relazione esterna e  su quella esterna
+					- ![image.png](../assets/image_1681898782114_0.png)
+				- ### INDEX NESTED LOOP JOIN
+					- è possibile sfruttare un indice per ridurre il costo delle operazioni di accesso per la relazione interna
+					- ![image.png](../assets/image_1681899209967_0.png)
+					- ![image.png](../assets/image_1681899225713_0.png)
+					- #### COSTO
+						- `P(R) + N(R) * (costo indice + dati)`
+						-
 					-
