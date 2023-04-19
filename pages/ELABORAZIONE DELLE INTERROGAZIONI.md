@@ -88,11 +88,13 @@
 				- si rimuovono i duplicati
 				- ![image.png](../assets/image_1681896297889_0.png)
 			- #### USARE HASING
-				- si adotta quando si ha un numero di buffer molto grande
-				- si leggono le pagine e si usa una funzione hash e si ridistribuiscono i risultati su file
+				- ##### FASE DI PARTIZIONAMENTO
+					- si adotta quando si ha un numero di buffer molto grande
+					- si leggono le pagine e si usa una funzione hash e si ridistribuiscono i risultati su file
+				- ##### FASE DI ELIMINAZIONE DEI DU
 				- si leggono in sequenza i file generati e si applica una nuova funzione hash (*diversa dalla prima* ) e si redistribuiscono i record nelle pagine e si eliminano i duplicati
 				- ![image.png](../assets/image_1681896774481_0.png)
-				-
+				- l'ipotesi è che nella seconda fase **non si debbano salvare le pagine su disco**
 				-
 			- #### USARE INDICE
 			-
