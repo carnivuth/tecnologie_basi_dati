@@ -114,5 +114,12 @@
 					- ![image.png](../assets/image_1681899225713_0.png)
 					- #### COSTO
 						- `P(R) + N(R) * (costo indice + dati)`
-						-
+				- ### JOIN E PUSH DOWN
+					- si possono sfruttare operazioni di push down di selezioni per alleggerire l'esecuzione di query di ricerca
+					- ```
+					  SELECT * FROM SOMELIER S RECENSIONI R
+					  WHERE R.SID=S.SID
+					  AND R.RIVISTA= "sapore di vino"
+					  ```
+					- eseguire il push down del filtro può alleggerire di molto l'esecuzione della query
 					-
