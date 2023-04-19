@@ -36,4 +36,33 @@
 			- in caso di attributi aggiuntivi si risolve con un passaggio ulteriore in RAM
 		- ### INDICI B+TREE
 			- si possono usare anche **se la query presenta un numero di attributi inferiori**
-			-
+			- condizione: **la query deve contenere un termine per ogni attributo di un prefisso della chiave dell'indice**
+			- ##### esempio
+				- ![image.png](../assets/image_1681384166928_0.png)
+				- ![image.png](../assets/image_1681384182274_0.png)
+- ## TIPOLOGIE DI PREDICATI
+	- si distinguono 4 tipi di predicati
+		- ### RANGE DELIMITING
+		  id:: 6437e3ed-a9f4-4c47-8307-de5c5449a0bd
+			- delimitano il range di foglie da accedere
+		- ### INDEX SARGABLE
+		  id:: 6437e3fa-9079-4c4f-8721-cdadd3db9312
+			- non limitano il numero di foglie ma si possono sfruttare se si accede tramite indice
+		- ### DATA SARGABLE
+			- predicati in cui l'indice non ha utilità sfruttabili solo dopo caricamento in memoria
+		- ### RESIDUAL
+			- non valutabili (*subquery*)
+	- ((6437e3ed-a9f4-4c47-8307-de5c5449a0bd)) vs ((6437e3fa-9079-4c4f-8721-cdadd3db9312))
+		- ![image.png](../assets/image_1681384670849_0.png)
+	- ### EFFETTI DEI 4 TIPI DI PREDICATI
+		- ![image.png](../assets/image_1681384719008_0.png)
+- ## SELEZIONE SENZA DISGIUNZIONI
+	- query con selezione su predicati disgiuntivi
+	- ![image.png](../assets/image_1681384831148_0.png)
+	- in questi casi si possono sfruttare piu indici e eseguire l'intersezione dei RID
+	- ![image.png](../assets/image_1681384945090_0.png)
+	- all'aumentare del numero di indici utilizzati **si riduce il costo dati ma aumenta il costo degli indici**
+- ## SELEZIONE CON DISGIUNZIONI
+	- se anche una sola condizionenon è risolubile con indice è necessario scandire il file
+	- se tutte le condizioni in OR sono risolubili con indice si risolvono facendo l'unione (*potenzialmente facendo l'unione dei RID*)
+	-

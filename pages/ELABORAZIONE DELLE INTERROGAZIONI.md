@@ -76,7 +76,20 @@
 		- #### PARAMETRI DI COSTO
 			- necessario per valutare la qualità delle diverse possibilità di risoluzione necessario usare parametri che si originano dalle statistiche dei dati
 			- ![image.png](../assets/image_1681295341687_0.png)
-			  id:: 643687da-4ea5-45ba-9406-5deb192924bd
 	- ### OPERATORI LOGICI
 		- [[SORT]]
 		- [[SELEZIONE]]
+		- # PROIEZIONE
+			- query del tipo
+			- ![image.png](../assets/image_1681896122390_0.png)
+			- possibilita
+				- #### sorting
+					- si scandisce r e si rimuovono gli attributi non richiesti
+					- si ordina il file
+					- si rimuovono i duplicati
+					- ![image.png](../assets/image_1681896297889_0.png)
+					-
+				-
+				- usare hasing
+				- usare indice
+			-
