@@ -137,6 +137,13 @@
 				- produce in output anche le tuple di una o l'altra relazione che non hanno match (*dandling*)
 				- ![image.png](../assets/image_1681902732283_0.png)
 				  id:: 643fcc66-10dd-4234-947c-65fb81d6f825
+		- # OPERATORI INSIEMISTICI
+			- intersezione e prodotto cartesiano sono **casi particolari di join**
+			- le tecniche di unione e differenza prevedono **l'eliminazione di di duplicati**
+				- si possono realizzare con sorting o hashing
+				- #### COSTI
+					- Sorting ` costo sort + P(R) + P(S) `
+					- Hashing ` 3 P(R) + 3 P(S) `
 				-
-				-
-				-
+			-
+			-
