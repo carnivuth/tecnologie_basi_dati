@@ -88,4 +88,10 @@
 			- ## NESTED LOOP JOIN
 				- si confronta ogni record di un input con ogni  record dell'altro input
 				- ![image.png](../assets/image_1681897585440_0.png)
-				-
+				- #### COSTO
+					- `P(R) + N(R) * P(S) = P(R) + TP(R)*P(R)*P(S)`
+					- è conveniente avere come relazione esterna quella con più tuple ma il guadagno sulle prestazioni non è significativo
+				- ### PROPRIETÀ
+					- l'algoritmo **preserva l'ordine della relazione esterna**
+					-
+					-
