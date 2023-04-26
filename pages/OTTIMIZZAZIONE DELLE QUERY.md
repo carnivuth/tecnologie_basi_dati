@@ -80,7 +80,11 @@
 					- #### JOIN PRIMARY KEY FOREIGN KEY
 						- in questo caso dato che il numero di valori distinti di R è uguale alla sua cardinalità allora il fattore di selettività risulta `N(S)`
 				- #### CARDINALITÀ DELLA PROIEZIONE
-					-
+					- ![image.png](../assets/image_1682507674162_0.png)
+					- #### STIMA DEL NUMERO DI VALORI DISTINTI
+						- #### LINEAR COUNTING
+							- ![image.png](../assets/image_1682508233853_0.png)
+							- `NK(R.A) ~= B ln (B/Z)`
 			-
 			-
 			-
