@@ -61,12 +61,14 @@
 			- ##### operatori logici
 				- operatori relazionali
 			- ##### operatori fisici
+			  id:: 643ff00e-6492-49d1-b46b-a360d995014f
 				- implementazione degli operatori logici
 		- #### VIE DI ACCESSO
 			- insieme di step necessari per recuperare le tuple di una relazione
 				- ##### scansione sequenziale
 				- ##### accesso tramite indici
 		- #### PIANI DI ACCESSO
+		  id:: 643ff00e-c706-4785-b008-330d570e6ece
 			- insieme di operazioni per accedere ai dati
 			- fa uso di operatori logici
 			- presenta rappresentazioni  del costo delle operazioni (*caso DB2 timeron contiene sia costi di IO che di CPU*)
