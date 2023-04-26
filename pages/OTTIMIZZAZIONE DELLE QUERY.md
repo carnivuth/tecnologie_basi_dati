@@ -78,7 +78,9 @@
 					  (N(R)*N(S))/NK(R.A)
 					  ```
 					- #### JOIN PRIMARY KEY FOREIGN KEY
-						- in questo caso dato che il numero di valori distinti di R è uguale alla sua cardinalita allora il fattore di selettività risulta `N(S)`
+						- in questo caso dato che il numero di valori distinti di R è uguale alla sua cardinalità allora il fattore di selettività risulta `N(S)`
+				- #### CARDINALITÀ DELLA PROIEZIONE
+					-
 			-
 			-
 			-
