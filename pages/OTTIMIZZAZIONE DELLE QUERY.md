@@ -1,0 +1,86 @@
+- ## CATALOGHI DI SISTEMA
+	- tabelle in un loro spazio dei nomi **contengono i metadati** sul DB
+	- schemi rilevanti
+		- ##### SYSCAT
+			- DB2 realizza lo standard  tramite le viste contenute in questo schema
+		- ##### SYSSTAT
+			- tabelle che contengono informazioni sul sistema
+- ## RAPPRESENTAZIONE INTERNA DI UNA QUERY
+	- la query viene rappresentata internamente come un albero
+	- ![image.png](../assets/image_1682501235377_0.png)
+	- ### REWRITING
+		- prima di qualunque cosa la query viene riscritta (*ottimizzazione semantica*)
+		- lo scopo è quello di semplificare la query
+		- le operazioni svolte sono
+			- #### RISOLUZIONE DELLE VISTE
+				- eliminazione delle liste
+				- ##### esempio
+					- ![image.png](../assets/image_1682501534544_0.png)s
+			- #### UNNESTING
+				- si cerca di rimuovere le subquery
+				- ##### esempio senza correlazione
+					- ![image.png](../assets/image_1682502130199_0.png)
+				- ##### esempio con correlazione
+					- ![image.png](../assets/image_1682502299124_0.png)
+			- #### USO DEI VINCOLI
+				- si sfruttano i vincoli sui dati per semplificare la query
+				- ##### esempio
+					- ![image.png](../assets/image_1682502417326_0.png)
+					- ![image.png](../assets/image_1682502512442_0.png)
+	- ### OTTIMIZZAZIONE
+		- la fase che partendo dalla query riscritta genera un ((643ff00e-c706-4785-b008-330d570e6ece)) ovvero un albero di ((643ff00e-6492-49d1-b46b-a360d995014f))
+		- ![image.png](../assets/image_1682502891658_0.png)
+		- ### ESECUZIONE DEL PIANO DI ACCESSO
+			- due possibilità di esecuzione
+			- #### PER MATERIALIZZAZIONE
+				- ogni operatore genera il risultato in una tabella temporanea
+				- non parallelizzabile
+				- le tabelle generate possono richiedere operazioni di IO
+				- ##### esempio
+					- ![image.png](../assets/image_1682503325543_0.png)
+					- ![image.png](../assets/image_1682503590437_0.png)
+			- #### IN PIPELINE
+				- gli operatori sono inseriti in una sorta di pipeline
+				- ogni operatore richiede i dati agli operatori in input
+				- piu efficiente
+				- non sempre possibile (*operatore sort*)
+				- ##### esempio
+					- ![image.png](../assets/image_1682503620416_0.png)
+			- #### INTERFACCIA ITERATORE
+				- per semplificare il codice di ordinamento si usa un interfaccia standardizzata per gli operatori
+					- ##### OPEN
+					  id:: 6448f80e-f8e9-4d24-b645-c4a68d7bcc9b
+						- inizializza, alloca buffer, passa parametri e richiama ricorsivamente open sui figli
+					- ##### HASNEXT
+						- verifica se ci sono altre tuple
+					- ##### NEXT
+						- richiede la prossima tupla
+					- ##### RESET
+						- riparte dalla prima tupla
+					- ##### CLOSE
+						- termina e rilascia le risorse
+			- #### DIGRESSIONE SCOPO OTTIMIZZAZIONE
+				- lo scopo del'ottimizzazione è quello di ottenere il **totale dei risultati il prima possibile**
+				- di conseguenza viene scelto il piano di accesso che fornisce prima il totale degli operatori
+				- è possibile variare questo comportamento tramite parametri
+		- ### RICERCA PIANO DI ACCESSO OTTIMALE
+			- vengono enumerati i possibili piani di accesso in uno spazio di ricerca
+			- si cerca di non considerare i piani di accesso notoriamente non ottimali
+			- punto fondamentale sapere **quanto un operatore è selettivo**
+			- l'approccio più diffuso è quello di mantenere statistiche sui cataloghi e sfruttarle al momento di determinare quale piano di accesso è migliore
+			- #### CALCOLO SELETTIVITÀ PREDICATI
+				- ![image.png](../assets/image_1682505713834_0.png)
+			- #### SELETTIVITA CON PIU PREDICATI
+				- ![image.png](../assets/image_1682507038473_0.png)
+				- #### SELETTIVITA DEL JOIN
+					- per join di uguaglianza si assume che la relazione con meno valori trovi match in quella con piu valori
+					- ```
+					  (N(R)*N(S))/NK(R.A)
+					  ```
+					- #### JOIN PRIMARY KEY FOREIGN KEY
+						- in questo caso dato che il numero di valori distinti di R è uguale alla sua cardinalita allora il fattore di selettività risulta `N(S)`
+			-
+			-
+			-
+			-
+			-
