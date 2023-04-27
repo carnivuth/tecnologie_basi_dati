@@ -153,7 +153,7 @@
 		- #### LEFT DEEP JOIN TREE
 			- ![image.png](../assets/image_1682596290774_0.png)
 			-
-		- In questo modo è molto più semplice generare piani che lavorano in pipeline (*si può usare index nested loops*)
-		- Euristica comunemente adottata a partire da System R
+			- In questo modo è molto più semplice generare piani che lavorano in pipeline (*si può usare index nested loops*)
+				- Euristica comunemente adottata a partire da System R
 	-
 	-
