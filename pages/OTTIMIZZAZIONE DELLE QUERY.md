@@ -85,6 +85,11 @@
 						- #### LINEAR COUNTING
 							- ![image.png](../assets/image_1682508233853_0.png)
 							- `NK(R.A) ~= B ln (B/Z)`
+				- #### CARDINALITÀ PROIEZIONI MULTI ATTRIBUTO
+					- si sfrutta un modello basato sulla formula di cardenas
+					- `NK(A)*NK(B)*[1-(1-1/(NK(A)*NK(B)))N(R)]`
+			- #### OPERATORI INSIEMISTICI
+				-
 			-
 			-
 			-
