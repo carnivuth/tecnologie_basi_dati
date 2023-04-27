@@ -89,7 +89,7 @@
 					- si sfrutta un modello basato sulla formula di cardenas
 					- `NK(A)*NK(B)*[1-(1-1/(NK(A)*NK(B)))N(R)]`
 			- #### OPERATORI INSIEMISTICI
-				-
+				- TODO inserire
 			-
 			-
 			-
