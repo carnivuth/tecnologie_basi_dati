@@ -110,7 +110,29 @@
 			- estensione degli ((644a4d2a-9104-4d02-ac06-f501a32204ab)) in cui viene mantenuto un contatore separato per i valori più frequenti
 	- ### CONOSCENZA DELLA DISTRIBUZIONE DEI VALORI
 		- la conoscenza della distribuzione dei valori ci consente di stimare meglio di ciò che consente di fare la formula di cardenas
-	- ### VALORI PIU FREQUENTI
-		-
-		-
-		-
+- ## CARDINALITA DI RELAZIONI DERIVATE
+	- stimare la cardinalita di relazioni derivate da piu operatori diventa sempre piu complesso dato che gli errori sulle stime delle cardinalita degli operatori si accumulano
+	- ![image.png](../assets/image_1682592499099_0.png)
+- ## OTTIMIZZAZIONE DI QUERY SU SINGOLA RELAZIONE
+	- Ci sono 4 possibili soluzioni
+		- Scansione sequenziale
+		- Uso di un solo indice (*eventualmente clustered*)
+		- Uso di più indici
+		- Uso solo di un indice (*index-only plan = non si accede ai dati*)
+	- ![image.png](../assets/image_1682593280352_0.png)
+	  id:: 644a55d7-2c05-4d50-820a-e61628d9d0c5
+- ## QUERY SU PIÙ RELAZIONI
+	- problema fondamentale determinare **l'ordine in cui eseguire il join**
+	- spazio di ricerca è **esponenziale in N**
+	- ![image.png](../assets/image_1682594607081_0.png)
+	- necessario determinare il numero di alberi diversi generabili
+	- ![image.png](../assets/image_1682594653051_0.png)
+	- ![image.png](../assets/image_1682594768427_0.png)
+	- ![image.png](../assets/image_1682594941402_0.png)
+	- ### PROGRAMMAZIONE DINAMICA
+		- basata sul principio di ottimalita
+		- dati 2 percorsi parziali P1 e P2 che hanno origine in S e arrivano entrambi in un nodo V, se costo(P1) < costo(P2), allora **P2 non può essere esteso in modo tale da generare un percorso di costo minimo da S a T**
+		- una soluzione ottimale è a sua volta composta da sotto soluzioni ottimali
+	-
+	-
+	-
