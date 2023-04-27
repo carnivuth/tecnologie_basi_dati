@@ -135,7 +135,13 @@
 		- una soluzione ottimale è a sua volta composta da sotto soluzioni ottimali
 		- ##### PREMESSA
 			- ogni nodo di un piano di accesso è a sua volta un piano di accesso parziale
-		- #### proprieta di piano di accesso
+		- #### proprieta piano di accesso
+			- Relazioni elaborate
+			- Schema (set di attributi)
+			- Predicati applicati
+			- Costo
+			- Cardinalità
+			- Ordine
 	-
 	-
 	-
