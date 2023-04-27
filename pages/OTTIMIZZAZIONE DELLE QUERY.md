@@ -133,6 +133,9 @@
 		- basata sul principio di ottimalita
 		- dati 2 percorsi parziali P1 e P2 che hanno origine in S e arrivano entrambi in un nodo V, se costo(P1) < costo(P2), allora **P2 non può essere esteso in modo tale da generare un percorso di costo minimo da S a T**
 		- una soluzione ottimale è a sua volta composta da sotto soluzioni ottimali
+		- ##### PREMESSA
+			- ogni nodo di un piano di accesso è a sua volta un piano di accesso parziale
+		- #### proprieta di piano di accesso
 	-
 	-
 	-
