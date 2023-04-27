@@ -142,6 +142,18 @@
 			- Costo
 			- Cardinalità
 			- Ordine
-	-
+		- le proprieta di un nodo sono date da `f(proprieta dei figli, operatore del nodo)`
+		- ### ALGORITMO DP
+			- Passo 1: determina per ogni relazione Ri il piano parziale migliore
+			- Passo k (k = 2,...,n): per ogni sottoinsieme di k relazioni determina il piano migliore, a partire dai soli piani selezionati nei passi precedenti, ossia combinando i piani ottimali per i e k-i relazioni (i=1,...,k-1)
+		- ancora il numero di join tree risulta esponenziale comunque si ottiene un ottimo miglioramento
+		- ![image.png](../assets/image_1682596124314_0.png)
+	- ### RIDUZIONE DELLO SPAZIO DI RICERCA
+		- si possono sfruttare tecniche euristiche per
+		- #### LEFT DEEP JOIN TREE
+			- ![image.png](../assets/image_1682596290774_0.png)
+			-
+		- In questo modo è molto più semplice generare piani che lavorano in pipeline (*si può usare index nested loops*)
+		- Euristica comunemente adottata a partire da System R
 	-
 	-
