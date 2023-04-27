@@ -89,9 +89,28 @@
 					- si sfrutta un modello basato sulla formula di cardenas
 					- `NK(A)*NK(B)*[1-(1-1/(NK(A)*NK(B)))N(R)]`
 			- #### OPERATORI INSIEMISTICI
-				- TODO inserire
-			-
-			-
-			-
-			-
-			-
+				- TODO inserire parte operatori insiemistici
+- ## ISTOGRAMMI
+	- per ovviare alla approssimazione della stima dei valori distinti di un attributo si sfruttano **istogrammi**
+	- coniste in B intervalli (*bucket*) che **partizionano l'insieme** di valori di un attributo
+	- ![image.png](../assets/image_1682590705367_0.png)
+	- ### TIPOLOGIE
+		- #### EQUI-WIDTH
+			- il dominio è suddiviso in `B` intervalli della **stessa ampiezza**
+			- semplici da aggiornare
+			- no garanzie sull'errore
+			- ![image.png](../assets/image_1682591299613_0.png)
+		- #### EQUI-DEPTH
+		  id:: 644a4d2a-9104-4d02-ac06-f501a32204ab
+			- il dominio è suddiviso in `B` intervalli con numero di elementi per ogni intervallo sia **circa lo stesso**
+			- piu onerosi da aggiornare
+			- in grado di adattarsi a distribuzioni non uniformi
+			- ![image.png](../assets/image_1682591316019_0.png){:height 195, :width 507}
+		- #### COMPRESSED
+			- estensione degli ((644a4d2a-9104-4d02-ac06-f501a32204ab)) in cui viene mantenuto un contatore separato per i valori più frequenti
+	- ### CONOSCENZA DELLA DISTRIBUZIONE DEI VALORI
+		- la conoscenza della distribuzione dei valori ci consente di stimare meglio di ciò che consente di fare la formula di cardenas
+	- ### VALORI PIU FREQUENTI
+		-
+		-
+		-
