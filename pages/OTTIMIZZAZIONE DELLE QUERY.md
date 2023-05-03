@@ -195,7 +195,14 @@
 			- 9 A maximal amount of optimization is performed to generate an access plan
 		- #### ORDINE DI ENUMERAZIONE PIANI DI ACCESSO
 			- Nel caso di left-deep trees è possibile anche una generazione alternativa, di tipo best-first, in cui viene espanso il piano di accesso parziale più "promettente" (tipicamente: costo minore)
-			-
+			- ##### CONCETTO DI DOMINAZIONE ESTESA
+				- Perché `AP'` domini `AP` va anche verificato che le relazioni elaborate da `AP'` includano quelle elaborate da `AP`
+		- #### RAGGRUPPAMENTI
+			- storicamente si valutava dopo tutti gli altri predicati
+			- è possibile eseguire il **push down del group by**
+				- Condizione da verificare: i valori delle funzioni aggregate non devono cambiare
+				- Quindi: o si scarta tutto il gruppo, oppure nessuna tupla del gruppo viene scartata
+				- Questo è il caso in cui si aggrega e poi si fanno solo join FK-PK, in cui la FK fa parte degli attributi di raggruppamento
 		-
 		-
 	-
