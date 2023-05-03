@@ -186,6 +186,7 @@
 					- vid (può influenzare il join con V)
 					- snome (semplifica l’ORDER BY)
 				-
+				-
 			-
 		-
 		-
