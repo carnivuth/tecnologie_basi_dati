@@ -185,8 +185,16 @@
 				- Se si esegue prima il join tra S e R i possibili ordini significativi sono invece:
 					- vid (può influenzare il join con V)
 					- snome (semplifica l’ORDER BY)
-				-
-				-
+		- #### LIVELLI DI OTTIMIZZAZIONE DB2
+			- 0 Basic rewrite rules, greedy join enumeration, only nested loops join
+			- 1 Frequent values statistics are not used, greedy join enumeration, subset of rewrite rules
+			  2 All statistics are used, almost all rewrite rules are applied, greedy join enumeration
+			- 3 DP enumeration (left-deep & no Cartesian products), index ANDing
+			- 5 (default) More complex rewrite rules
+			- 7 Similar to 5 but without the heuristic rules
+			- 9 A maximal amount of optimization is performed to generate an access plan
+		- #### ORDINE DI ENUMERAZIONE PIANI DI ACCESSO
+			- Nel caso di left-deep trees è possibile anche una generazione alternativa, di tipo best-first, in cui viene espanso il piano di accesso parziale più "promettente" (tipicamente: costo minore)
 			-
 		-
 		-
