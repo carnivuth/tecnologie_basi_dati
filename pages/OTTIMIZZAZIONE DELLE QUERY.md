@@ -171,7 +171,17 @@
 			- tempo di ottimizzazione **ridotto drasticamente**
 			- non è detto che la **strategia paghi**
 		- #### ORDINI SIGNIFICATIVO
-			- L’ordine delle tuple di un nodo è detto significativo se può influenzare le Operazioni ancora da compiere (o il risultato finale)
+			- L’ordine delle tuple di un nodo è detto significativo se **può influenzare le operazioni ancora da compiere** (o il risultato finale)
+			- ##### ESEMPIO
+				- ```
+				  SELECT S.snome, R.rivista, V.cantina
+				  FROM Recensioni R, Sommelier S, Vini V
+				  WHERE R.vid=V.vid
+				  AND R.sid=S.sid
+				  AND V.vnome=‘Merlot’
+				  ORDER BY S.snome,V.cantina
+				  ```
+				-
 			-
 		-
 		-
