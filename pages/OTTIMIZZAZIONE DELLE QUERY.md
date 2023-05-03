@@ -184,7 +184,7 @@
 				- Supponendo di eseguire prima il join tra V e R, il solo possibile ordine significativo è su sid, perché può influenzare il join con S
 				- Se si esegue prima il join tra S e R i possibili ordini significativi sono invece:
 					- vid (può influenzare il join con V)
-					- ◼ snome (semplifica l’ORDER BY)
+					- snome (semplifica l’ORDER BY)
 				-
 			-
 		-
