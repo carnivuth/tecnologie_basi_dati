@@ -203,6 +203,7 @@
 				- Condizione da verificare: i valori delle funzioni aggregate non devono cambiare
 				- Quindi: o si scarta tutto il gruppo, oppure nessuna tupla del gruppo viene scartata
 				- Questo è il caso in cui si aggrega e poi si fanno solo join FK-PK, in cui la FK fa parte degli attributi di raggruppamento
+			-
 		-
 		-
 	-
