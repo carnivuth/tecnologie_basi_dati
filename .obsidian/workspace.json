@@ -146,5 +146,13 @@
     }
   },
   "active": "d8ab42fee78901d5",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "index.md~",
+    "index.md",
+    "index.new.md",
+    "quartz.layout.ts",
+    "quartz.config.ts",
+    "readme.md",
+    "old_index.md"
+  ]
 }
