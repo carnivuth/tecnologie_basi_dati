@@ -11,10 +11,14 @@
             "id": "d8ab42fee78901d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "pages/struttura_database.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "struttura_database"
             }
           }
         ]
@@ -61,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0d08927db7be80ff",
@@ -77,6 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "pages/struttura_database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +92,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for struttura_database"
             }
           },
           {
@@ -142,11 +148,16 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "d8ab42fee78901d5",
   "lastOpenFiles": [
+    "assets/Pasted image 20250130101923.png",
+    "templates/page.md",
+    "templates",
+    "pages/struttura_database.md",
     "index.md~",
     "index.md",
     "index.new.md",

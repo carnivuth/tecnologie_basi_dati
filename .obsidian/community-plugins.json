@@ -5,5 +5,6 @@
   "oz-clear-unused-images",
   "obsidian-relative-line-numbers",
   "obsidian-minimal-settings",
-  "execute-code"
+  "execute-code",
+  "templater-obsidian"
 ]
