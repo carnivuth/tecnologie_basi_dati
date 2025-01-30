@@ -2,3 +2,5 @@
 - CREATE TABLESPACE ... MANAGED BY SYSTEM
 - impossibilita di modificare i container
 - DIMENSIONE MASSIMA numero di file * dimensione massima singolo file
+
+ [NEXT](pages/struttura_database.md)

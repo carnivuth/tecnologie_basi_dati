@@ -14,3 +14,5 @@
 		- [[MODIFICA DEI RECORD]]
 	- [[RAPPRESENTAZIONE DEI DATI]]
 - le pagine sono organizzate in [[FILE]]
+
+ [NEXT](pages/struttura_database.md)

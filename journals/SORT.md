@@ -32,3 +32,5 @@
 	-
 	-
 	-
+
+ [NEXT](pages/struttura_database.md)

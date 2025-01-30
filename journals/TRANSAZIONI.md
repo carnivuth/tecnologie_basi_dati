@@ -23,3 +23,5 @@
 		- responsabile di ((6421c858-c6de-4b98-a122-c18655fbdcf2))
 	- #### DDL COMPILER
 		- responsabile della ((64130fb2-5a41-4907-ac7e-523ad2167e28))
+
+ [NEXT](pages/struttura_database.md)

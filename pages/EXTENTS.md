@@ -1,2 +1,0 @@
-- un extent è un unità di memorizzazione del disco
-- composto da [[PAGINE]] continue di dimensione fissata di 4kb

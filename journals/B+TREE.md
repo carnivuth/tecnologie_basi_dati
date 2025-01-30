@@ -43,3 +43,5 @@
 		- si genera un indice multilivello
 		- ![image.png](../assets/image_1678364336081_0.png)
 	- implementazione del b+tree: [[GiST]]
+
+ [NEXT](pages/struttura_database.md)

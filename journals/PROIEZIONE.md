@@ -21,3 +21,5 @@
 	- si applicano le tecniche precedenti ma **su i dati dell'indice senza accedere al file dati**
 	-
 -
+
+ [NEXT](pages/struttura_database.md)

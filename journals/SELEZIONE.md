@@ -66,3 +66,5 @@
 	- se anche una sola condizionenon è risolubile con indice è necessario scandire il file
 	- se tutte le condizioni in OR sono risolubili con indice si risolvono facendo l'unione (*potenzialmente facendo l'unione dei RID*)
 	-
+
+ [NEXT](pages/struttura_database.md)

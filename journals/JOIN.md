@@ -54,3 +54,5 @@
 	- produce in output anche le tuple di una o l'altra relazione che non hanno match (*dandling*)
 	- ![image.png](../assets/image_1681902732283_0.png)
 	  id:: 643fcc66-10dd-4234-947c-65fb81d6f825
+
+ [NEXT](pages/struttura_database.md)
