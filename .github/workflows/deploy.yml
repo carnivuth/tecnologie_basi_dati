@@ -8,7 +8,7 @@ on:
     paths-ignore:
       - ".gitignore"
       - "readme.md"
-
+      - "journals/**"
 
 permissions:
   contents: read
