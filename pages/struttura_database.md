@@ -78,3 +78,4 @@ $$
 
 Di conseguenza una grossa parte del lavoro dietro alla modellazione di un database risiede nell'**organizzazione dei dati nel disco in modo da ottimizzarne l'accesso**
 
+ [NEXT](pages/gestione_disco.md)
