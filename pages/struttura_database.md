@@ -1,9 +1,6 @@
 ---
 id: struttura database
-tags: 
-	- struttura fisica
-	- struttura logica
-	- ottimizzazione di accesso 
+tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
 aliases: 
 index: 1
 ---

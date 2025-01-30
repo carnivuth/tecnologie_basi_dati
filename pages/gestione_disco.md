@@ -1,9 +1,6 @@
 ---
 id: gestione_disco
-tags: 
-	- livello fisico
-	- struttura
-	- perche evitare il fylesystem
+tags: ["livello fisico","struttura","perche evitare il fylesystem"]
 aliases: 
 index: 2
 ---
@@ -91,4 +88,21 @@ Per esempio date due relazioni correlate fra di loro (*e.g. join*) può essere u
 
 ## Rappresentare valori nel disco
 
-Nel caso in cui 
+Il database associa delle strategie di rappresentazione per ogni tipologia di dati concessi a livello logico
+
+| **DATATYPE**                              | **REPRESENTATION**                                                                   |
+| ----------------------------------------- | ------------------------------------------------------------------------------------ |
+| fixed-length strings char($n$)            | si usano $n$ byte con un carattere terminatore                                       |
+| variable-length string chars varchar($n$) | si usano $m+p$ bytes dove $m<n$ e i $p$ byte iniziali indicano quanto e lunga la stringa |
+| DATE e TIME                        | rappresentati come stringhe di lunghezza fissa|
+| Enumerated Types                        | si utilizza un encoding in interi|
+
+### Gestire i campi a lunghezza variabile
+
+I campi a lunghezza variabile risultano un problema in fase di aggiornamento in quanto possono variare il loro spazio di occupazione del disco
+
+Una soluzione comune e quella di scrivere i campi a lunghezza fissa prima dei campi a lunghezza variabile e salvare un puntatore al primo byte di ogni campo a lunghezza variabile
+
+![](Pasted%20image%2020250130112347.png)
+
+In generale ogni record contiene un header che contiene le seguenti informazioni
