@@ -1,5 +1,0 @@
-- (il dbms gestisce la memoria)
-- scelta sicura ma poco ottimizzata per impossibilita del DBMS di conoscere il progetto fisico, per ottimizzazioni necessaria ((63ff283b-7769-4172-8e68-ebf166d3f255))
-- modifica dei container automatizzata
-	- bilanciamento automatizzato
-- DIMENSIONE MASSIMA = dimensione del filesystem

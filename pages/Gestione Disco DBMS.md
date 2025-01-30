@@ -1,6 +1,0 @@
-- [[perche non usare i servizi del filesistem?]]
-- il disco è diviso in [[TABLE SPACE]]
-- un singolo tablespace è diviso in ((64047a90-da0e-4420-9792-08e59fee6570))
-- un container è fatto di EXTENT
-- uno dei compiti piu importanti del DBMS è quello di gestire la [[LETTURA E SCRITTURA PAGINE]] dal disco
-	-
