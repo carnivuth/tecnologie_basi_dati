@@ -7,5 +7,6 @@
     "mermaid_charts"
   ],
   "cssTheme": "Minimal",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "showRibbon": false
 }

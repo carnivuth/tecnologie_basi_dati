@@ -10,7 +10,6 @@
   "showInlineTitle": false,
   "vimMode": true,
   "showLineNumber": true,
-  "showRibbon": false,
   "propertiesInDocument": "source",
   "readableLineLength": false
 }
