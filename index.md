@@ -1,4 +1,6 @@
-# TECNOLOGIE BASI DATI
+# Tecnologie basi dati
+
+Appunti personali del corso di basi di dati
 
 ## Struttura fisica del database
 
@@ -10,4 +12,9 @@
 - [migliorare la ricerca: indici](indici.md)
 - [b-tree](b-tree.md)
 - [b+tree](b+tree.md)
+- [implementare gli indici ad albero: GiST](GiST.md)
 - [indici-hash](indici-hash.md)
+
+## Transazioni
+
+- [gestire l'accesso ai dati: transazioni](transazioni.md)

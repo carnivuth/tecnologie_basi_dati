@@ -195,4 +195,4 @@ Uno dei problemi del [Linear hashing](#Linear%20hashing) risiede nel fatto che l
 
 L'idea alla base dello spiral hashing punta a concentrare i record nella prima sezione della primary area sfruttando una funzione esponenziale
 
-[PREVIOUS](pages/GiST.md)
+[PREVIOUS](pages/GiST.md) [NEXT](pages/transazioni.md)

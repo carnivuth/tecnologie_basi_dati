@@ -4,11 +4,11 @@ tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
 aliases: 
 index: 1
 ---
-# COME E FATTO UN DATABASE?
+# Come e fatto un database?
 
 Per comprendere come lavora un database e necessario conoscere la sua architettura. Essa può essere scomposta per responsabilità in due componenti principali:
 
-## STRUTTURA LOGICA
+## Struttura logica
 
 componente che si occupa delle funzionalità logiche di un database, gestione utenti informazioni prestazionali e ottimizzazione di query
 
@@ -32,7 +32,7 @@ end
 A & B --> Logical_layer
 ```
 
-## STRUTTURA FISICA
+## Struttura fisica
 
 Componente che si occupa dell' accesso e della gestione della memoria secondaria, del salvataggio e recupero dei dati
 

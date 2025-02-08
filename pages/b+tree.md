@@ -137,4 +137,5 @@ $$
 Sotto le assunzioni precedenti e dimostrabile che la formula di Yao sovrastima i costi di accesso, tuttavia per query che implicano un alto numero di record $R$ Il modello di Yao e piu costoso del modello di Cardenas
 
 ![](Pasted%20image%2020250204145210.png)
+
 [PREVIOUS](pages/b-tree.md) [NEXT](pages/GiST.md)
