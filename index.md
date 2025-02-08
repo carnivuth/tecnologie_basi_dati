@@ -1,8 +1,6 @@
 # Tecnologie basi dati
 
 Appunti personali del corso di tecnologie e basi di dati dei professori Patella Marco e Ciaccia Paolo
-
-![mongodb-svgrepo-com](mongodb-svgrepo-com.svg)![mysql-svgrepo-com](mysql-svgrepo-com.svg)![postgresql-logo-svgrepo-com](postgresql-logo-svgrepo-com.svg)![redis-svgrepo-com](redis-svgrepo-com.svg)
 ## Struttura fisica del database
 
 - [architettura e goals di un DBMS](struttura_database.md)
@@ -20,3 +18,5 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 
 - [gestire l'accesso ai dati: transazioni](transazioni.md)
 - [garantire la durabilità dei dati](durability_control.md)
+
+## Accesso ai dati
