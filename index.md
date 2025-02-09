@@ -24,3 +24,4 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
  - [come il DBMS risponde alle query: operatori](operatori_relazionali.md)
  - [ordinare i dati: sorting](sorting.md)
  - [selezione](selezione.md)
+ - [proiezione](proiezione.md)
