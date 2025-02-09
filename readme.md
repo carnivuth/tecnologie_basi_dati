@@ -2,7 +2,6 @@
 
 appunti di tecnologie per basi di dati e big data, knowledgebase personale del corso tenuto dai professori Patella Marco e Ciaccia Paolo
 
-![mongodb-svgrepo-com](mongodb-svgrepo-com.svg)![mysql-svgrepo-com](mysql-svgrepo-com.svg)![postgresql-logo-svgrepo-com](postgresql-logo-svgrepo-com.svg)![redis-svgrepo-com](redis-svgrepo-com.svg)
 ## UTILIZZO
 
 - installare [obsidian](https://obsidian.md/)
