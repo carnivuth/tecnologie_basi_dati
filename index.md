@@ -20,6 +20,7 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 - [garantire la durabilità dei dati](durability_control.md)
 
 ## Accesso ai dati
+ 
  - [come il DBMS risponde alle query: operatori](operatori_relazionali.md)
  - [ordinare i dati: sorting](sorting.md)
  - [selezione](selezione.md)
