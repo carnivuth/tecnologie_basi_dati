@@ -1,6 +1,7 @@
 # Tecnologie basi dati
 
 Appunti personali del corso di tecnologie e basi di dati dei professori Patella Marco e Ciaccia Paolo
+
 ## Struttura fisica del database
 
 - [architettura e goals di un DBMS](struttura_database.md)
@@ -25,3 +26,6 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
  - [ordinare i dati: sorting](sorting.md)
  - [selezione](selezione.md)
  - [proiezione](proiezione.md)
+ - [join](join.md)
+ - [operazioni di aggregazione](group_by.md)
+ - [operatori di modifica](operatori_modifica.md)

@@ -193,7 +193,7 @@ esistono due principali tipologie di file
 
 Le pagine sono disposte in maniera sequenziale all'interno del file.
 
-Uno dei problemi principali di questa modalità e identificare dove e locato lo spazio libero rapidamente per l'inserimento di un nuovo record, per questo 2 approcci sono i piu utilizzati
+Uno dei problemi principali di questa modalità e identificare dove e locato lo spazio libero rapidamente per l'inserimento di un nuovo record, per questo 2 approcci sono i più utilizzati
 
 
 | DOPPIA LISTA LINKATA                                                                            | DIRECTORY PAGE                                                                                                     |
