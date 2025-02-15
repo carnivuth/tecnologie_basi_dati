@@ -1,5 +1,0 @@
-- supponiamo di avere una query del tipo
-- ![image.png](../assets/image_1681903552192_0.png)
-- l'algoritmo tiene traccia delle informazioni parziali in base all'operatore
-- ![image.png](../assets/image_1681903602352_0.png)
-- si può sfruttare la presenza di un **indice per ottimizzare** le query
