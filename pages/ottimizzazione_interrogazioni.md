@@ -124,10 +124,5 @@ close():
 	# termina e rilascia le risorse
 ```
 
-## Ricerca del piano di accesso ottimale
-
-La ricerca del miglior piano di accesso avviene enumerando i possibili piani di accesso in un opportuno **spazio di ricerca**
-
-Per ogni piano di accesso e necessario **stimarne il costo** e di conseguenza la cardinalità dei risultati parziali
 
  [NEXT](pages/struttura_database.md)

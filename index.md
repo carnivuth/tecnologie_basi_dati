@@ -29,3 +29,6 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
  - [join](join.md)
  - [operazioni di aggregazione](group_by.md)
  - [operatori di modifica](operatori_modifica.md)
+ - [ottimizzare le interrogazioni](ottimizzazione_interrogazioni.md)
+ - [ricerca del piano di accesso](ricerca_piano_accesso.md)
+ - [tuning del DB](progetto_fisico_tuning.md)
