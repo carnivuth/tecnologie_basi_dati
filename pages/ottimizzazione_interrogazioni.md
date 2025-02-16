@@ -124,5 +124,4 @@ close():
 	# termina e rilascia le risorse
 ```
 
-
- [NEXT](pages/struttura_database.md)
+[PREVIOUS](pages/operatori_modifica.md) [NEXT](pages/ricerca_piano_accesso.md)

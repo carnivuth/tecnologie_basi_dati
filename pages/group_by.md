@@ -49,4 +49,5 @@ In caso di indici sugli attributi di group by e di calcolo delle funzioni non e 
 ## Group by usando hashing
 
 Si costruisce una tabella di hash in memoria centrale in maniera analoga al caso della [proiezione](proiezione.md#Proiettare%20usando%20hashing)
+
 [PREVIOUS](pages/join.md) [NEXT](pages/operatori_modifica.md)
