@@ -7,7 +7,7 @@ index: 6
 
 # Implementando i [b+tree](b+tree.md): GiST
 
-Generalized search tree (*[GiST](https://en.wikipedia.org/wiki/GiST)*) e una struttura generalizzata per l'implementazione di indici, che se opportunamente istanziata puo comportarsi da diverse tipologie di albero ([b+tree](b+tree.md), r-tree)
+Generalized search tree (*[GiST](https://en.wikipedia.org/wiki/GiST)*) e una struttura generalizzata per l'implementazione di indici, che se opportunamente istanziata puo comportarsi da diverse tipologie di albero ([b+tree](b+tree.md), [r-tree](r-tree.md))
 
 La specifica GiST modella le query come predicati e la risoluzione di una query come la ricerca nell'albero del predicato che la soddisfa
 
