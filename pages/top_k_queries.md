@@ -1,6 +1,6 @@
 ---
 id: top_k_queries
-tags: []
+tags: ["knnoptimal"]
 aliases: 
 index: 22
 ---
@@ -193,6 +193,8 @@ ORDER BY 0.8*Price + 0.2*Mileage
 STOP AFTER 5;
 ```
 
-non  e detto che l'algoritmo [KNNOptimal](#Risolvere%20le%20query%20top-$k$%20algoritmo%20KNNOptimal) rest
+non  e detto che l'algoritmo [KNNOptimal](#Risolvere%20le%20query%20top-$k$%20algoritmo%20KNNOptimal) restituisca tuple concordi con il parametro di filtering, per supportare la casistica si utilizza una variante del [KNNOptimal](#Risolvere%20le%20query%20top-$k$%20algoritmo%20KNNOptimal) con supporto al **distance browsing**
+
+nella coda `PQ` si includono anche le tuple e **l'algoritmo termina quando il primo elemento della coda e una tupla**
 
 [PREVIOUS](pages/r-tree.md)
