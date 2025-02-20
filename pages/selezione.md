@@ -43,7 +43,7 @@ In caso di indice un-clustered si può decidere di ordinare i RID prima di acced
 
 In caso di condizioni multi-attributo l'utilizzo di indici non e sempre possibile, in particolare:
 
-- gli [indici hash](indici-hash.md) possono essere utilizzati solo se sono presenti termini di uguaglianza per ogni attributo chiave dell'indice
+- gli [indici hash](indici_hash.md) possono essere utilizzati solo se sono presenti termini di uguaglianza per ogni attributo chiave dell'indice
 - i [b+tree](b+tree.md) possono essere utilizzati solo se i termini presenti compongono un prefisso delle chiavi dell'albero (*si fa riferimento a [indici multi attributo](b+tree.md#Ricerche%20multi%20attributo)*)
 
 ## Selezioni senza disgiunzione

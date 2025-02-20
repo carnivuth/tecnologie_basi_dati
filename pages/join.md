@@ -86,7 +86,7 @@ A ~~~ central_memory ~~~ N
 
 ## Sfruttando gli indici: index nested loop join
 
-e possibile utilizzare un indice per accedere alla relazione interna, il costo dipende dal tipo di indice (*[b+tree](b+tree.md) oppure [indici-hash](indici-hash.md)*) e da se l'indice e clustered o meno
+e possibile utilizzare un indice per accedere alla relazione interna, il costo dipende dal tipo di indice (*[b+tree](b+tree.md) oppure [indici_hash](indici_hash.md)*) e da se l'indice e clustered o meno
 
 ![image.png](../assets/image_1681899225713_0.png)
 

@@ -50,4 +50,5 @@ Per implementare la ricerca e necessario implementare le API previste dalla spec
 -  `Penalty(E1,E2)` Se il punto si trova dentro la bounding box la penalty e `0` altrimenti e data dal aumento di dimensione della bounding box stessa
 - `Picksplit(P)` in output vengono fornite le entry e l'output e un set di due bounding box con cardinalità inferiore, lo split viene deciso minimizzando l'area complessiva delle due [MBB](#Concetto%20di%20MBB)
 >[!WARNING] minimizzare la somma complessiva e un problema Np-hard  
+
 [PREVIOUS](pages/indici_multidimensionali.md) [NEXT](pages/top_k_queries.md)

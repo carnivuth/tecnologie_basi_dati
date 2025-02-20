@@ -13,7 +13,7 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 - [b-tree](b-tree.md)
 - [b+tree](b+tree.md)
 - [implementare gli indici ad albero: GiST](GiST.md)
-- [indici-hash](indici-hash.md)
+- [indici_hash](indici_hash.md)
 
 ## Transazioni
 
@@ -32,3 +32,14 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
  - [ottimizzare le interrogazioni](ottimizzazione_interrogazioni.md)
  - [ricerca del piano di accesso](ricerca_piano_accesso.md)
  - [tuning del DB](progetto_fisico_tuning.md)
+
+## Indici multidimensionali
+
+- [indici_multidimensionali](indici_multidimensionali.md)
+-  [r-tree](r-tree.md)
+
+## Query top-$k$
+
+- [query top k](top_k_queries.md)
+- [query top k con più relazioni](top_k_join_queries.md)
+- [introdurre il concetto di ranking](rankSQL.md)

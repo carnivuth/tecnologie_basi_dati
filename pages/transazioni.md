@@ -181,4 +181,4 @@ I DBMS offrono la possibilità di determinare un livello di isolamento, diversi 
 
 Un DBMS dovrebbe essere in grado di gestire la concorrenza con diversi livelli di granularita, estendendo i meccanismi anche agli indici.
 
-[PREVIOUS](pages/indici-hash.md) [NEXT](pages/durability_control.md)
+[PREVIOUS](pages/indici_hash.md) [NEXT](pages/durability_control.md)

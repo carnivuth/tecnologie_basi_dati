@@ -73,7 +73,7 @@ In caso di split della root i nodi figli vengono splittati come segue
 
 ## Excell
 
-Tecnica basata su una hash directory fatta a griglia $n$-dimensionale dove ogni cella corrisponde a una datapage **ma non e vero il contrario**, estendendo il concetto di [extendible hashing](indici-hash.md#Extendible%20hashing) al caso multidimensionale.
+Tecnica basata su una hash directory fatta a griglia $n$-dimensionale dove ogni cella corrisponde a una datapage **ma non e vero il contrario**, estendendo il concetto di [extendible hashing](indici_hash.md#Extendible%20hashing) al caso multidimensionale.
 
 ![](Pasted%20image%2020250216182829.png)
 
@@ -85,7 +85,7 @@ In caso di split ci sono due casistiche:
 - split di una datapage referenziata da due celle della directory, in questo caso e sufficiente aggiornare le referenze della directory
 - split di una datapage referenziata da una cella della directory in questo caso si raddoppia la dimensione della griglia
 
->[!NOTE] tutte le problematiche e considerazioni fatte per l'[extendible hashing](indici-hash.md#Extendible%20hashing) restano valide 
+>[!NOTE] tutte le problematiche e considerazioni fatte per l'[extendible hashing](indici_hash.md#Extendible%20hashing) restano valide 
 
 
 ## Grid file
