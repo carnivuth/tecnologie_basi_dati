@@ -36,7 +36,7 @@ Ci sono inoltre diverse nomenclature applicate agli indici
 - **clustered/unclustered** un indice si dice clustered se e costruito sull'attributo con cui e ordinato il data file
 - **primary/secondary** se costruito su un attributo `unique` (tutto ciò che può essere chiave primaria)
 - **dense/sparse** il numero di coppie nell'indice e uguale al numero di entry nel data file
-- **single level/multi level** un indice multi livello e composto da indici sparsi che indicizzano altri indici (*possibili n livelli*)
+- **single level/multi level** un indice multi livello e composto da indici sparsi che indicizzano altri indici (*possibili $n$ livelli*)
 
 ## E nel disco? come rappresentare gli indici
 

@@ -37,7 +37,7 @@ A --> B --> C
 
 >[!NOTE] nel caso anche il nodo padre sia pieno, si procede ricorsivamente fino alla radice
 
-Questo procedimento e molto costoso (al massimo $2h +1$ letture), strategie alternative prevedono di cedere delle foglie ai nodi vicini, questo comporta un grosso costo in termini di dati letti in quanto si compiono molte piu scritture
+Questo procedimento e molto costoso (al massimo $2h +1$ letture), strategie alternative prevedono di cedere delle foglie ai nodi vicini, questo comporta un grosso costo in termini di dati letti in quanto si compiono molte più scritture
 
 ## Cancellazione
 
@@ -48,7 +48,7 @@ La cancellazione segue le stesse logiche dell'inserimento ma in questo caso il p
 
 ## Occupazione in memoria
 
-Ogni nodo intermedio contiene  al piu $2d$ chiavi e $2d+1$ PID, di conseguenza l'ordine dell'albero e uguale a 
+Ogni nodo intermedio contiene  al più $2d$ chiavi e $2d+1$ PID, di conseguenza l'ordine dell'albero e uguale a 
 
 $$
 d = \Big\lfloor \frac{pagesize - PIDsize}{2(keysize + PIDsize)}\Big\rfloor
@@ -67,9 +67,7 @@ NL = \Big\lceil \frac{N}{d_{leaf} \ast u}\Big\rceil
 $$
 
 
-se l'attributo chiave non e unico liste di rids, se le liste sono lunghe si puo optare per liste di PIDs efficenti se indice clustered
-
-in caso di campi variabili l'ordine viene meno, necessario fare considerazioni sul nodo compressione delle chiavi
+se l'attributo chiave non e unico liste di rids, se le liste sono lunghe si può optare per liste di PIDs efficienti se indice clustered, in caso di campi variabili l'ordine viene meno, necessario fare considerazioni sul nodo compressione delle chiavi
 
 ## Ricerche multi attributo
 
@@ -81,7 +79,7 @@ WHERE cognome = "rossi"
 AND anno > 1990
 ```
 
-Si possono sfruttare indici in diverse modalita per accedere ai dati
+Si possono sfruttare indici in diverse modalità per accedere ai dati
 
 - usare un indice su uno dei due attributi e verificare la condizione sull'altro
 - usare due indici e calcolare l'intersezione dei due risultati

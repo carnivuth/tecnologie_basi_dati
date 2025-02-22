@@ -72,20 +72,20 @@ Esistono 3 principali tipologie di tablespace
 
 Durante la creazione di un tablespace e possibile settare dei parametri
 
-| **PARAMETER**    | **DESCRIPTION**                                            |     |
-| ---------------- | ---------------------------------------------------------- | --- |
-| **EXTENTSIZE**   | numero di extent                                           |     |
-| **BUFFERPOOL**   | buffer associato al tablespace                             |     |
-| **PREFETCHSIZE** | numero di pagine da trasferire prima che vengano richieste |     |
-| **OVERHEAD**     | tempo stimato medio di latenza per un operazione di I/O    |     |
-| **TRANSFERRATE** | tempo stimato di trasferimento di una singola pagina       |     |
+| **PARAMETER**    | **DESCRIPTION**                                            |
+| ---------------- | ---------------------------------------------------------- |
+| **EXTENTSIZE**   | numero di extent                                           |
+| **BUFFERPOOL**   | buffer associato al tablespace                             |
+| **PREFETCHSIZE** | numero di pagine da trasferire prima che vengano richieste |
+| **OVERHEAD**     | tempo stimato medio di latenza per un operazione di I/O    |
+| **TRANSFERRATE** | tempo stimato di trasferimento di una singola pagina       |
 >[!NOTE] gli ultimi due vengono utilizzati dal ottimizzatore
 
-## Perché non viene utilizzato il fylesystem
+## Perché non viene utilizzato il filesystem
 
 Sarebbe opportuno chiedersi perché non vengono utilizzate le funzionalità di accesso al disco offerte dal filesystem, la risposta e semplice:
 
-**le performance di un dbms sono strettamente legate a come i dati sono organizzati su disco**
+**le performance di un DBMS sono strettamente legate a come i dati sono organizzati su disco**
 
 Che significa sapere a come i dati devono essere processati logicamente e quali sono le relazioni logiche fra i dati
 
@@ -206,7 +206,6 @@ Uno dei problemi principali di questa modalità e identificare dove e locato lo 
 In questa tipologia di file i record sono ordinati in base a un dato attributo
 
 >[!NOTE] vien da se che l'inserimento di un record dovra preservare l'ordine
-
 
 ### Heap vs Sequential
 

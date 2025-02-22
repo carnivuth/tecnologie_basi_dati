@@ -7,7 +7,7 @@ index: 9
 
 # Garantire la Durabilità di una transazione
 
-Per poter garantire le proprieta di [atomicita e durabilita](index.md#Transazioni) di una transazione e necessario garantire che gli effetti di una transazione sopravvivano a un crash del sistema:
+Per poter garantire le proprietà di [atomicità e durabilità](transazioni.md#transazioni) di una transazione e necessario garantire che gli effetti di una transazione sopravvivano a un crash del sistema:
 
 I crash del sistema si dividono in 3 tipologie:
 

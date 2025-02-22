@@ -40,7 +40,7 @@ Gli indici hash sono classificati secondo la metodologia di gestione della memor
 Per tutti gli indici hash le seguenti considerazioni sono fondamentali:
 
 - scelta della funzione hash
-- Gestione dell'[Bucket overflow](#Bucket%20overflow)
+- Gestione del [Bucket overflow](#Bucket%20overflow)
 - Capacita $C$ dei bucket della primary area
 - Capacita $C_{OV}$ dei bucket dell' area di overflow (*se presente*)
 - Utilizzo della memoria allocata
@@ -75,7 +75,6 @@ $$
 $$
 
 > [!NOTE] minore il parametro migliori le performance della funzione hash
-
 
 ## Gestire l'overflow
 
