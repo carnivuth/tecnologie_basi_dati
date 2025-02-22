@@ -43,3 +43,7 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 - [query top k](top_k_queries.md)
 - [query top k con più relazioni](top_k_join_queries.md)
 - [introdurre il concetto di ranking](rankSQL.md)
+
+# Skyline queries
+
+- [skyline_queries](skyline_queries.md)
