@@ -19,15 +19,11 @@ A --> B --> C
 
 Le funzioni **hash non sono iniettive** quindi sono possibili collisioni fra le chiavi,
 
-ogni possibile valore generabile dalla funzione hash definisce uno spazio logico detto **bucket**, mentre il numero di elementi che il bucket può contenere e detto **capacita**
-
-La memoria composta dai bucket e detta **primary area**
+ogni possibile valore generabile dalla funzione hash definisce uno spazio logico detto **bucket**, mentre il numero di elementi che il bucket può contenere e detto **capacita**, la memoria composta dai bucket e detta **primary area**
 
 ## Bucket overflow
 
-Come già detto i bucket hanno una capacita, se l'inserimento di un record avviene all'interno di un bucket pieno si ha un caso di **bucket overflow**
-
-## Classificazione degli indici hash
+Come già detto i bucket hanno una capacita, se l'inserimento di un record avviene all'interno di un bucket pieno si ha un caso di **bucket overflow**, questo e uno dei problemi principali da gestire in caso di utilizzo di indice hash.
 
 Gli indici hash sono classificati secondo la metodologia di gestione della memoria
 
@@ -73,8 +69,7 @@ $$
 $$
 \mu = \sum_{j=0}^{P-1}{\frac{X_j}{P}} \space \sigma^2 = \sum_{j=0}^{P-1}{\frac{(X_j-\mu)^2}{P}}
 $$
-
-> [!NOTE] minore il parametro migliori le performance della funzione hash
+> [!TIP] minore il parametro migliori le performance della funzione hash
 
 ## Gestire l'overflow
 
@@ -83,14 +78,14 @@ Per gestire l'overflow ci sono diverse tecniche: le principali sono
 - **chaining** vengono usati puntatori e overflow area
 - **open addressing** vengono usati i bucket nell'area primaria per gestire gli overflow (*no puntatori*)
 
-## Chaining
+### Chaining
 
 Due principali strategie di chaining sono:
 
 - **separate lists** i record in overflow vengono inseriti nel primo bucket successivo libero i record sono mantenuti linkati fra loro
 - **coalesced chaining** i bucket sono linkati fra loro (*non i record*), meno efficiente ma semplifica la gestione dei bucket
 
-## Open addressing
+### Open addressing
 
 Nel caso di tecniche di open addressing per ogni valore della chiave $k_i$ si predispone una sequenza di possibili indirizzamenti $H_0(k_i)....H_l(k_i)$ in fase di inserimento si testano tutti gli indirizzamenti fino a trovare un bucket non pieno
 
@@ -170,7 +165,7 @@ In caso di eliminazione i bucket possono essere uniti se il numero di record del
 
 ### Linear hashing
 
-Nell'approccio a linear hashing il bucket che viene splittato non e quello in overflow ma un altro scelto in base a un criterio
+Nell'approccio a linear hashing il bucket che viene diviso non e quello in overflow ma un altro scelto in base a un dato criterio
 
 ```mermaid
 flowchart TD
