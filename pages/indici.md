@@ -19,16 +19,10 @@ Da un punto di vista logico un indice e una collezione di coppie $(k_i,p_i)$ dov
 - $k$ e il valore di un attributo su cui l'indice e costruito
 - $p$ e un RID (*massimo un PID*)  della tupla con il dato valore
 
-esistono 2 tipologie principali di indici
+esistono 2 tipologie principali di indici:
 
-## Indici ordinati
-
-Le coppie sono ordinate per l'attributo chiave
-
-## Indici hash
-
-Viene utilizzata una funzione di hash per trovare la posizione di una data entry dato il valore della chiave
-
+- **Indici ordinati** Le coppie sono ordinate per l'attributo chiave
+- **Indici hash**: Viene utilizzata una funzione di hash per trovare la posizione di una data entry dato il valore della chiave
 >[!WARNING] non il massimo per le ricerche a range
 
 Ci sono inoltre diverse nomenclature applicate agli indici
