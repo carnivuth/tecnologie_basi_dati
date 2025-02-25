@@ -13,7 +13,7 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 - [b-tree](b-tree.md)
 - [b+tree](b+tree.md)
 - [implementare gli indici ad albero: GiST](GiST.md)
-- [indici_hash](indici_hash.md)
+- [indici hash](indici_hash.md)
 
 ## Transazioni
 
@@ -35,7 +35,7 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 
 ## Indici multidimensionali
 
-- [indici_multidimensionali](indici_multidimensionali.md)
+- [indici multidimensionali](indici_multidimensionali.md)
 -  [r-tree](r-tree.md)
 
 ## Query top-$k$
@@ -46,4 +46,4 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 
 # Skyline queries
 
-- [skyline_queries](skyline_queries.md)
+- [skyline queries](skyline_queries.md)
