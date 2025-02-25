@@ -103,6 +103,33 @@ si basa sul fatto che entrambe le relazioni siano **ordinati sull'attributo di j
 
 ![](Pasted%20image%2020250213151824.png)
 
+```python
+result=[]
+while !F.empty() and G.empty():
+
+    if f.A > g.B
+        g = G.next()
+
+    else if f.A < g.B
+        f = F.next()
+
+	# after first match find all values with matches
+    else
+		result.append(f)
+		f_1 = F.next()
+        while ! F.empty() and f_1.A = g.B:
+			result.append(f)
+			f_1 = F.next()
+      
+        g_1 = G.next()
+        while ! G.empty() and g_1.B = f.A
+			result.append(g)
+	        g_1 = G.next()
+
+        f = F.next()
+        g = G.next()
+```
+
 Il costo  e la somma del numero di pagine di entrambe le relazioni $P(R)+P(S)$
 
 >[!TIP] Se si ha un indice sugli attributi di join non e necessario ordinare le relazioni, se unclustered il costo e comunque elevato
