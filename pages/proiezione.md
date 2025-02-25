@@ -61,7 +61,6 @@ si leggono in sequenza i file generati e si applica una nuova funzione hash (*di
 ### Sorting vs hashing
 
 La tecnica basata su sorting risulta migliore nel caso in cui i valori risultino sbilanciati o ci siano molte tuple da eliminare
-
 >[!TIP] con il sorting il risultato e anche ordinato :)
 
 ## Proiettare con un [indice](indici.md)
