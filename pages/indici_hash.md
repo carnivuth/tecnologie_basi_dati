@@ -71,6 +71,15 @@ $$
 $$
 > [!TIP] minore il parametro migliori le performance della funzione hash
 
+## Dimensionare l'indice hash: Load factor
+
+Data una stima $N$ dei record e una capacita $C$ dei bucket, determinare il parametro **load factor** $d$ definisce il numero di bucket $P$ come 
+
+$$
+P = \frac{N}{d*C}
+$$ 
+>[!TIP] un valore alto di $d$ riduce il numero di record nell'area di overflow
+
 ## Gestire l'overflow
 
 Per gestire l'overflow ci sono diverse tecniche: le principali sono
