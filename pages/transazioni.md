@@ -58,7 +58,7 @@ Esistono diverse proprietà di schedule:
 | **Serial**       | le transazioni sono eseguite in maniera sequenziale                                                                             |
 | **Serializable** | uno schedule che conivolge solo transizioni committate i cui effetti sul db sono riconducibili a quello di uno schedule Seriale |
 | **Recoverable**  | Se la transazione $T1$ legge una modifica di una transazione $T2$ $T2$ committa per prima                                       |
-| **Cascadeless**  | Una transazione puo leggere modifiche solo di transizioni committate                                                            |
+| **Cascadeless**  | Una transazione può leggere modifiche solo di transizioni committate                                                            |
 | **Strict**       | Una transazione non tocca valori modificati da un altra transazione attiva                                                      |
 
 ## Gestire gli accessi concorrenti: locks

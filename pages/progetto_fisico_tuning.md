@@ -40,6 +40,62 @@ Il problema della selezione degli indici può essere modellato con un **problema
 - Creare prima indici che velocizzino più di una query
 - Considerare l'impatto dei costi di modifica, quindi attenzione a creare indici su attributi soggetti spesso ad aggiornamenti!
 
+### Esempio, query con join e selezione
+
+```sql
+SELECT E.name, D.mgr
+FROM Employees E, Departments D
+WHERE E.dno = D.dno
+AND D.name = 'Toy'
+```
+
+In questo caso un piano di accesso ragionevole potrebbe essere questo:
+
+```mermaid
+flowchart TD
+E((D))
+D((E))
+C{{INDXSCAN}}
+B{{INDXJOIN}}
+A{{OUTPUT}}
+E --> C --> B
+D --> B
+B --> A
+```
+
+In questo caso sono necessari un indice su `D.name` e un indice su `E.dno` (*possibilmente [hash](indici_hash.md)*)
+
+### Esempio: join con filtro su due relazioni
+
+```sql
+SELECT E.name, D.mgr
+FROM Employees E, Departments D
+WHERE E.dno = D.dno
+AND D.name = 'Toy'
+AND E.age = 25
+```
+
+In questo caso se si possiede un indice su `E.age` potrebbe non essere necessario l'indice per fare [index nested loop join](join.md#Sfruttando%20gli%20indici%20index%20nested%20loop%20join), dipende da quanto e selettivo
+
+### Esempio: indici per query range
+
+```sql
+SELECT E.eid
+FROM Employees E
+WHERE E.age BETWEEN 20 AND 30
+AND E.sal BETWEEN 3000 AND 5000
+
+SELECT E.eid
+FROM Employees E
+WHERE E.sal BETWEEN 3000 AND 5000
+AND E.age = 25
+```
+
+Nel primo caso un indice ([b+tree](b+tree.md)) su `age,sal` può risultare conveniente, nel secondo caso l'ordine degli attributi nella query e più rilevante, in particolare:
+
+- `age,sal` entrambi i predicati sono range delimiting
+- `sal,age` il predicato su age e index-sargable 
+
 ## Data clustering
 
 Come mostrato in precedenza DB2 contempla la presenza [di indici non perfettamente clustered](operatori_modifica.md#Update%20della%20clustering%20key), di conseguenza e necessario che attributi scegliere per un indice clustered e determinare il livello di clustering desiderato
