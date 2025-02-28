@@ -59,3 +59,4 @@ I nodi vengono assegnati al cluster in base a dove si trovano i dati in input in
 ## Map reduce, execution
 
 Al momento dell'esecuzione, il supporto runtime crea un processo **jobtracker** che a sua volta crea un certo numero di **tasktracker** distribuiti nei vari nodi del cluster
+[PREVIOUS](pages/skyline_queries.md)

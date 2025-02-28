@@ -21,7 +21,7 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 - [garantire la durabilità dei dati](durability_control.md)
 
 ## Accesso ai dati
- 
+
  - [come il DBMS risponde alle query: operatori](operatori_relazionali.md)
  - [ordinare i dati: sorting](sorting.md)
  - [selezione](selezione.md)
@@ -44,6 +44,10 @@ Appunti personali del corso di tecnologie e basi di dati dei professori Patella 
 - [query top k con più relazioni](top_k_join_queries.md)
 - [introdurre il concetto di ranking](rankSQL.md)
 
-# Skyline queries
+## Skyline queries
 
 - [skyline queries](skyline_queries.md)
+
+## Big data
+
+- [big data](big_data.md)

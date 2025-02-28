@@ -27,4 +27,4 @@ grazie all'operatore $\mu$ e possibile l'interleaving con altri operatori $\sigm
 
 ![](Pasted%20image%2020250220160711.png)
 
-[PREVIOUS](pages/top_k_join_queries.md)
+[PREVIOUS](pages/top_k_join_queries.md) [NEXT](pages/skyline_queries.md)
